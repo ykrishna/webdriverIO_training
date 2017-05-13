@@ -1,0 +1,17 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "firstwebdriverIOtest",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "krishna",
+  "license": "ISC",
+  "dependencies": {
+    "webdriverio": "^4.6.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
