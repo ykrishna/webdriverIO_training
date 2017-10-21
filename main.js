@@ -1,14 +1,17 @@
 var webdriverio = require('webdriverio');
+var assert = require('assert');
 var options = {
     desiredCapabilities: {
-        browserName: 'chrome'
+        browserName: 'safari'
     }
 };
 webdriverio
     .remote(options)
     .init()
-    .url('http://www.google.com')
-    .getTitle().then(function (title) {
-    console.log('Title was: ' + title);
-})
+    .url('https://cucumber.io/docs/reference/javascript')
+    .getTitle()
+    .then(function (title) {
+        console.log('Title of the page you have visited is: ' + title);
+        assert.equal(title, "JavaScript·Cucumber");
+    })
     .end();

@@ -1,5 +1,7 @@
-# Created by .ignore support plugin (hsz.mobi)
+# Created by Krishna
 .gitignore
 .idea/
 node_modules/
-
+.DS_Store
+package-lock.json
+errorText.txt
