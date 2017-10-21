@@ -32,3 +32,17 @@ npm test -- it will automatically get the wdio runner path from node modules
 else manually we can run using 
 
 node node_modules/.bin/wdio wdio.conf.js
+
+**run with Gulp task runner with gulp-wbdriver**
+
+add gulp file with following code 
+
+var gulp = require('gulp');
+var webdriver = require('gulp-webdriver');
+
+gulp.task('test:e2e', function() {
+    return gulp.src('./wdio.conf.js').pipe(webdriver());
+
+});
+
+run : gulp test:e2e
