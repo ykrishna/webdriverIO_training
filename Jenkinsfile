@@ -1,16 +1,17 @@
 pipeline {
     agent any
     stages {
-        stage('Test') {
+        
+        stage('setup') {
             steps {
                 sh 'npm install'
+               }
+        
+        stage('Test') {
+            steps {
+                
                 sh 'gulp test:e2e'
-            }
+                  }
         }
     }
-    post {
-        always {
-            echo "good bye"
-        }
-    }
-}
+ }
