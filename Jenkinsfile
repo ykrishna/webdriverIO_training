@@ -1,5 +1,3 @@
-pipeline 
-{
    node {
     stage('stage 1'){    
        echo 'Hello World'
@@ -13,4 +11,4 @@ pipeline
      echo 'stage 3'
     }
   }
-}
+
