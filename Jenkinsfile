@@ -1,8 +1,9 @@
 pipeline {
-    tools {
+    // if we declare tools block there should be at least one tool should be declared
+    //tools { 
         //maven "apache-maven-3.5.3"
         //jdk "default"
-    }
+   //}
 
     agent any
 
