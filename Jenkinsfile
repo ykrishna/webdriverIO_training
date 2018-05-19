@@ -11,7 +11,7 @@ pipeline {
          stage("clone repository"){
                  steps{
                          dir("webdriverIO_training"){
-                               git changelog: false, poll: false, url: 'git@github.com:ykrishna/webdriverIO_training.git', branch: 'master'  
+                               //git changelog: false, poll: false, url: 'git@github.com:ykrishna/webdriverIO_training.git', branch: 'master'  
                                echo "cloning completed"
                          }
                  }
